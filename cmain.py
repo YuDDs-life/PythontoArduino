@@ -3,7 +3,7 @@ import time
 
 
 arduino = serial.Serial(port='COM5', baudrate=9600)
-time.sleep(2)
+time.sleep(2) #Tgian de he thong tien hanh ket noi
 inp = input("(int) | >> ") #tra ve dang chuoi
 arduino.write(bytes(inp, 'utf-8')) #gui gia tri xuong Arduino
 time.sleep(1)
